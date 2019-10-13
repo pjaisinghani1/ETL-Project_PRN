@@ -3,7 +3,7 @@ DROP TABLE "Ny_Inspection";
 
 CREATE TABLE "Ny_Inspection" (
    "Restaurant_Name" VARCHAR,
-   "Building" INT   NOT NULL,
+   "Building" VARCHAR   NOT NULL,
    "Street" VARCHAR   NOT NULL,
    "Zip_Code" INT   NOT NULL,
    "Boro" VARCHAR   NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE "Ny_Inspection" (
 CREATE TABLE "Yelp_Data" (
    "Restaurant_Name" VARCHAR,
    "City" VARCHAR   NOT NULL,
-   "Rating" VARCHAR   NOT NULL,
+   "Rating" INT   NOT NULL,
    CONSTRAINT "pk_Yelp_Data" PRIMARY KEY (
        "Restaurant_Name"
     )
